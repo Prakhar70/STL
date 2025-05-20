@@ -1,4 +1,5 @@
 #include <iostream>
+#include <utility>
 
 using namespace std;
 
@@ -88,7 +89,7 @@ ostream& operator<<(ostream& pOut, const String& pStr){
 
 int main(){
 
-    // String str1("Prakhar"); //params ctor
+    String str1("Prakhar"); //params ctor
     // cout<<str1<<endl;
     // String str2("Sugam");// default constructor
     // cout<<str2<<endl;
@@ -108,7 +109,7 @@ int main(){
     cout<<s1<<endl;
     cout<<s2<<endl;
 
-    // String str6=std::move(str1);
+    String str6=move(str1);
 
     // str6=std::move(str1);
 }

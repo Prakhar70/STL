@@ -53,18 +53,21 @@ class uniquePtr
 };
 
 int main(){
-    uniquePtr<int> ptr(new int(10));//ctor
+    // uniquePtr<int> ptr(new int(10));//ctor
 
 
-    // uniquePtr<int> ptr2 = ptr;//compile time error
+    // // uniquePtr<int> ptr2 = ptr;//compile time error
 
-    uniquePtr<int> ptr2 = std::move(ptr);
+    // uniquePtr<int> ptr2 = std::move(ptr);
 
-    // ptr2 = ptr;//compile time error
+    // // ptr2 = ptr;//compile time error
 
-    ptr2= std::move(ptr);
+    // ptr2= std::move(ptr);
 
-    ptr.reset(new int(10));
+    // ptr.reset(new int(10));
+
+    int* i = new int();
+    cout<<*i<<endl;
 
     // int p = *ptr;
 }

@@ -12,7 +12,7 @@ class my_vector{
 
     public:
     my_vector(size_t size):m_size{size},m_capacity{size}{
-        m_arr=new T[m_capacity];
+        m_arr = new T[m_capacity];
     }
     my_vector(size_t size, int fill_value):m_size{size},m_capacity{size}{
         m_arr=new T[m_size];
