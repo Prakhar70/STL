@@ -11,10 +11,10 @@ class my_vector{
     size_t m_capacity;
 
     public:
-    my_vector(std::size_t size):m_size{size},m_capacity{size}{
+    my_vector(size_t size):m_size{size},m_capacity{size}{
         m_arr=new T[m_capacity];
     }
-    my_vector(std::size_t size, int fill_value):m_size{size},m_capacity{size}{
+    my_vector(size_t size, int fill_value):m_size{size},m_capacity{size}{
         m_arr=new T[m_size];
         for(size_t i =0;i<m_size;i++){
             m_arr[i] = fill_value;
